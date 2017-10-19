@@ -1,0 +1,97 @@
+/*2*/
+*{ 
+  font-family: "verdana", sans-serif;
+}
+
+/*3*/
+h1{
+  color: blue;
+  text-align: center;
+}
+
+/*4*/
+#cabecera img{
+  width: 10%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*5*/
+.elemento-menu{
+  display: inline;
+  list-style-type: none;
+}
+
+/*6. Alinee al centro el elemento con el identificador “menu”*/
+#menu{
+  text-align: center;
+}
+
+/*7. Todas las etiquetas hijas que se encuentren en el footer, con identificador “footer”, se el
+estilo un itálica.*/
+#footer *{
+  font-style: italic;
+}
+
+/*8. Alinee al centro el texto del footer, con identificador “footer”*/
+footer{
+  text-align: center;
+}
+
+/*9. primer hermano de h3 que sea h4, aplique*/
+aside h3 ~ h4{
+  font-style: italic;
+  color: green;
+}
+
+/*10. a todos los elementos hermanos de h5 que sean p, aplique:*/
+aside h5 ~ p{
+  font-size: 8pt;
+}
+
+/*11. Dentro del aside, todos los h5, cuyo atributo title termine con “small” debe mostrarlos
+subrayados.*/
+aside ul li h5[title$="small"]{
+  text-decoration: underline;
+}
+
+/*12. Dentro del aside, todos los li cuyo valor del atributo name sea “fork”, aplique*/
+aside ul li[name="fork"]{
+  list-style-image: url(“https://goo.gl/y0yaro”);
+}
+
+/*13*/
+header nav ul li a:hover{
+  color: green;
+}
+
+/*14*/
+p.descripcion::first-letter{
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+/*15. Dentro de los artículos de la zona central, centre las imágenes y redimensiónelas a un
+ancho del 15%*/
+article img{
+  width: 15%;
+  display: block;
+  margin: auto
+}
+
+
+/*MANTENGA COMENTADA ESTA PARTE HASTA EL FINAL*/
+section#left {
+	float:left;
+	width:70%;
+	
+}
+aside#right {
+	float:right;
+	width:25%;
+}
+
+footer#footer {
+	clear:both;
+}
